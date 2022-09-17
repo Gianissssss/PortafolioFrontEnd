@@ -5,8 +5,257 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>Portafolio Front End</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+              <li><a href="#" class="nav-link px-2 text-secondary">Redes</a></li>
+            </ul>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login  </button>
+            </div>
+            <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h2 class="fw-bold mb-0" style="color: black;">Ejemplo de Modal</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput" style="color: black;">Email </label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword" style="color: black;">Contraseña</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Ingresar</button>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </header>
+
+      <!--carrousel-->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="600" src="https://images.pexels.com/photos/1089454/pexels-photo-1089454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Ejemplo img carousel 1</h1>
+                <p>Contenido de Bootstrap</p>
+                <p><a class="btn btn-lg btn-light" href="#">Ejemplo Boton</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="600" src="https://images.pexels.com/photos/1089455/pexels-photo-1089455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Ejemplo img carousel 2</h1>
+                <p>Contenido de Bootstrap.</p>
+                <p><a class="btn btn-lg btn-danger" href="#">Ejemplo boton</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="600" src="https://images.pexels.com/photos/1444620/pexels-photo-1444620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Ejemplo img carousel 3</h1>
+                <p>Contenido de Bootstrap.</p>
+                <p><a class="btn btn-lg btn-outline-warning" href="#">Ejemplo boton</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--container tarejtas y accordion-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card col-3 m-2" style="width: 18rem; background-color: beige;">
+            <img style="margin-top: 5px;" src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Ejemplo card de Boostrap.</p>
+            </div>
+        </div>
+        <div class="card col-3 m-2" style="width: 18rem; background-color: beige;">
+            <img style="margin-top: 5px;" src="https://images.pexels.com/photos/4555893/pexels-photo-4555893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Ejemplo card de Boostrap.</p>
+            </div>
+          </div>
+        <div class="accordion accordion-flush col-6" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Ejemplo Accordion Item #1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 Ejemplo Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                 Ejemplo Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--tabla-->
+    <div class="m-4">
+    <h2 class="display-6 text-center mb-4">Ejemplo de tabla</h2>
+    <table class="table ">
+        <thead>
+          <tr style="background-color: beige;">
+            <th>Name</th>
+            <th>Upvotes</th>
+            <th>Downvotes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>4</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>7</td>
+            <td>9</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr style="background-color: rgba(213, 213, 216, 0.76);">
+            <td><b> Totals</b></td>
+            <td>21</td>
+            <td>23</td>
+          </tr>
+        </tfoot>
+      </table>
+</div>
+<div class="m-4">
+    <article>
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="m-2" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong> Ejemplos de titulos</strong></h4>
+         <h1>Ejemplo de h1</h1>
+        <h2>Ejemplo de h2</h2>
+        <h3>Ejemplo de h3</h3>
+        <h4>Ejemplo de h4</h4>
+        <h5>Ejemplo de h5</h5>
+        <h6>Ejemplo de h6</h6>
+      </div> 
+      <div class="row">
+      <h3 class="m-4" style="color: rgb(126, 126, 201); text-align: center;"><em> Ejemplo de listas</em></h3>
+    <div class="col-4 m-4" style="background-color: beige; border-radius: 20px;">
+        
+        <p class="m-4"><ins> Listas desordenadas</ins></p>
+        <ul>
+            <li>Primer item</li>
+            <li>Segundo item</li>
+            <li>Tercer item</li>
+        </ul>
+    </div>
+    <div class="col-4 m-4" style="background-color: beige;  border-radius: 20px;">
+        <p class="m-4"><ins> Listas ordenadas</ins></p>
+        <ol>
+            <li>Primer item</li>
+            <li>Segundo item</li>
+            <li>Tercer item</li>
+          </ol>
+        </div></div>
+    </article>
+</div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
 </body>
 </html>
